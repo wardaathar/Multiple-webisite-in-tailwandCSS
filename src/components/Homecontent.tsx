@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 
 const Homecontent = () => {
   useEffect(() => {
@@ -49,7 +50,7 @@ const Homecontent = () => {
   <div className="flex flex-wrap justify-center gap-8">
     {/* Product 1 */}
     <div className="w-full sm:w-72 md:w-80 lg:w-96 bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-      '<img src="/red.png" alt="Product 1" className="w-full h-48 object-cover rounded-md" />
+      <Image src="/red.png" alt="Product 1" className="w-full h-48 object-cover rounded-md"/>
       <h3 className="text-xl font-semibold mt-4">Wireless Headphones</h3>
       <p className="text-gray-600 mt-2">High-quality sound and comfort</p>
       <button className="mt-4 px-6 py-2 hover:bg-slate-600 bg-blue-500 text-white rounded-md">Buy Now</button>
@@ -57,7 +58,7 @@ const Homecontent = () => {
 
     {/* Product 2 */}
     <div className="w-full sm:w-72 md:w-80 lg:w-96 bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-      '<img src="blackwireless.png" alt="Product 2" className="w-full h-48 object-cover rounded-md" />'
+      <Image src="blackwireless.png" alt="Product 2" className="w-full h-48 object-cover rounded-md"/>
       <h3 className="text-xl font-semibold mt-4">Noise Cancelling Earbuds</h3>
       <p className="text-gray-600 mt-2">Perfect for travel and focus</p>
       <button className="mt-4 px-6 py-2 hover:bg-slate-600 bg-blue-500 text-white rounded-md">Buy Now</button>
