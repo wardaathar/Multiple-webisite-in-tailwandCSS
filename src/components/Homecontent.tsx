@@ -6,8 +6,8 @@ import 'aos/dist/aos.css';
 const Homecontent = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500, // Animation duration
-      once: true, // Animation will play only once
+      duration: 1500, 
+      once: true, 
     });
   }, []);
 
